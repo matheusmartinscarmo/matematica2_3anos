@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de senha</title>
+    <title>Gerador de Senha</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,12 +12,13 @@
     <section class="conteudo">
         <div class="conteudo-titulo">
             <img src="unlock.svg" alt="cadeado fechado">
-            <h2 class="titulo-principal">Gerador de senhas</h2>
-            <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
+            <h2 class="titulo-principal">Gerador de Senhas</h2>
+            <h3 class="titulo-secundario">Gere uma senha segura instantaneamente</h3>
         </div>
         <div class="conteudo-senha">
             <label for="senha">Senha</label>
             <input name="senha" type="text" id="campo-senha" readonly>
+            <button class="copiar-senha" onclick="copiarSenha()">Copiar</button>
         </div>
         <div class="parametro">
             <h3 class="parametro-titulo">Personalize sua senha</h3>
@@ -25,9 +26,9 @@
                 <div class="parametro-senha">
                     <h4 class="parametro-senha__titulo">Número de caracteres</h4>
                     <div class="parametro-senha-botoes">
-                        <button class="parametro-senha__botao">-</button>
+                        <button class="parametro-senha__botao" id="diminuir">-</button>
                         <p class="parametro-senha__texto">12</p>
-                        <button class="parametro-senha__botao">+</button>
+                        <button class="parametro-senha__botao" id="aumentar">+</button>
                     </div>
                 </div>
                 <div class="parametro-senha">
